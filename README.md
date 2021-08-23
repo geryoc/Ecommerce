@@ -17,10 +17,10 @@ So the basic structure for the application is something like this:
     * Services
       * __Category__
         * Application
-          *Create
-          *Search
-          *Delete
-          *...
+          * Create
+          * Search
+          * Delete
+          * ...
         * Domain
           Category.cs
         * Web
@@ -28,10 +28,10 @@ So the basic structure for the application is something like this:
           * CategoryResource.cs
       * __Product__
         * Application
-          *Create
-          *Search
-          *Delete
-          *...
+          * Create
+          * Search
+          * Delete
+          * ...
         * Domain
           Product.cs
         * Web
@@ -71,5 +71,9 @@ https://martinfowler.com/bliki/CQRS.html
 
 ## Technologies and libraries used:
 
+- .NET 5 asp.net core
 - Angular for the Client App.
 - Using Mapster for mapping contract and resource objects to domain objects 
+- Mediatr for implementing Mediator Pattern and CQRS
+- Entity Framework Core
+- Using System.ComponentModel data annotations and validators for request inpput validation and application business logic validation.
