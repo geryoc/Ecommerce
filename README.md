@@ -1,6 +1,8 @@
 # Ecommerce
 
-Simple Ecommerce App as a proof of concept to exercise my skills on ASP.NET Core using .NET 5 and Angular.
+Simple Ecommerce App as a proof of concept to exercise my skills on ASP.NET Core.
+
+There is a client app using Angular.
 
 ## Design Principles Used:
 
@@ -51,7 +53,6 @@ The basic structure for the application is something like this:
 ## Technologies and libraries used:
 
 - .NET 5 asp.net core
-- Angular for the Client Apps.
 - Using Mapster for mapping contract and resource objects to domain objects
 - Entity Framework Core
 - Using System.ComponentModel data annotations and validators for request inpput validation.
