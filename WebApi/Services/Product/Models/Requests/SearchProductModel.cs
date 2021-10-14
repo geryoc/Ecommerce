@@ -1,4 +1,5 @@
 ﻿using Ecommerce.WebApi.Shared.Web.Requests;
+using System.Collections.Generic;
 
 namespace Ecommerce.WebApi.Services.Product.Models
 {
@@ -8,15 +9,18 @@ namespace Ecommerce.WebApi.Services.Product.Models
         public long? CategoryId { get; set; }
         public decimal? MinPrice { get; set; }
         public decimal? MaxPrice { get; set; }
-        public SearchProductOrderBy? OrderBy { get; set; }
-        public SearchProductOrderBy? OrderByDescending { get; set; }
+        public IEnumerable<ProductOrderBy> OrderBy { get; set; } = new List<ProductOrderBy>();
     }
 
-    public enum SearchProductOrderBy
+    public enum ProductOrderBy
     {
         Created = 0,
-        Name = 1,
-        Price = 2,
-        CategoryId = 3
+        CreatedDescending = 1,
+        Name = 2,
+        NameDescending = 3,
+        Price = 4,
+        PriceDescending = 5,
+        Category = 6,
+        CategoryDescending = 7
     }
 }

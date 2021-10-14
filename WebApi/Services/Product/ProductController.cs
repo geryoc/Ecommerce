@@ -29,7 +29,7 @@ namespace Ecommerce.WebApi.Services.Product
                 .Where(product => model.Name == null || product.Name.Contains(model.Name))
                 .Where(product => model.MinPrice == null || product.Price >= model.MinPrice)
                 .Where(product => model.MaxPrice == null || product.Price <= model.MaxPrice)
-                .ProductsOrderBy(model.OrderBy, model.OrderByDescending);
+                .ProductsOrderBy(model.OrderBy);
 
             var products = await productsQuery
                 .Skip(model.Skip)
